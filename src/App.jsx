@@ -22,6 +22,7 @@ import ProtectAdminOnly from './components/ProtectAdminOnly'
 import Admin from './pages/Admin'
 import { Toaster } from 'sonner'
 import VerifyEmail from './pages/VerifyEmail'
+import SignupPage from './pages/SignUpPage'
 
 
 
@@ -48,6 +49,7 @@ const App = () => {
           </Route>
         </Route>
         <Route path='/signin' element={<SigninPage/>}/>
+        <Route path='/signup' element={<SignupPage/>}/>
         <Route path='/verify/:token' element={<VerifyEmail/>}/>
       </Routes>
     </BrowserRouter>

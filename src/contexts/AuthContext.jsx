@@ -6,21 +6,18 @@ import { useState } from "react";
 export const authContext = createContext()
 
 const AuthProvider = ({children})=>{
-        // const user ={
-        //     name: "Zoologistboi company and co."
-        // }
-
-
         
         const [users, setUsers] = useState([])
+        //const []
+        
 
             const fetchUsers = async()=>{
                 try {
-                   const res = await fetch("https://fakestoreapi.com/users")
+                   const res = await fetch("http://localhost:4003/api/users")
                    const data = await res.json()
                    console.log(data);
                    
-                   setUsers(data)
+                   setUsers(data.user)
 
                 } catch (error) {
                     console.log(error);
@@ -45,9 +42,6 @@ const AuthProvider = ({children})=>{
    return(
     <authContext.Provider value={value}>
         {children}
-
-
-
 
         <hr />
         <p>contact us</p>
