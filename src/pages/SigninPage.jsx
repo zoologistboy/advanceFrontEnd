@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
 const SigninPage = () => {
@@ -160,9 +160,12 @@ const SigninPage = () => {
 
           <p className="mt-8 text-center text-sm text-gray-600">
             Don't have an account?{' '}
-            <a href='./Signup' className="text-blue-600 hover:text-blue-500 font-medium">
+            {/* <a href='./Signup' className="text-blue-600 hover:text-blue-500 font-medium">
               Sign up
-            </a>
+            </a> */}
+            <Link to="/signup" className="text-blue-600 hover:text-blue-500 font-medium">
+              Sign up
+             </Link>
           </p>
         </div>
       </div>
