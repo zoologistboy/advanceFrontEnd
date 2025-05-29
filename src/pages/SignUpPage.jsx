@@ -291,7 +291,7 @@ const SignupPage = () => {
 
           <p className="mt-8 text-center text-sm text-gray-600">
             Already have an account?{' '}
-            <a href="/signin" className="text-blue-600 hover:text-blue-500 font-medium">
+            <a onClick={navigate("/signin")} className="text-blue-600 hover:text-blue-500 font-medium">
               Sign in
             </a>
           </p>
