@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import Contact from './pages/contact'
+// import Contact from './pages/contact'
 import Header from "./components/Header"
 import About from './Pages/About'
 import Notfound from './pages/Notfound'
