@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { authContext } from "../contexts/AuthContext";
 // import Button from "./Button";
 import Hero from "./Hero";
 
 const Header = () => {
+   const navigate = useNavigate()
   // const { signin } = useContext(authContext);
 
   return (
@@ -23,7 +24,7 @@ const Header = () => {
         </Link>
       </div>
 
-      <button className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">
+      <button onClick={()=>{navigate("/signup")}} className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">
         Sign Up
       </button>
 
