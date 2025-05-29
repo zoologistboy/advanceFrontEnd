@@ -23,6 +23,8 @@ import Admin from './pages/Admin'
 import { Toaster } from 'sonner'
 import VerifyEmail from './pages/VerifyEmail'
 import SignupPage from './pages/SignUpPage'
+// import ReactHookForm from './pages/ReactHookForm'
+import SignUp from './pages/ReactHookForm'
 
 
 
@@ -50,6 +52,7 @@ const App = () => {
         </Route>
         <Route path='/signin' element={<SigninPage/>}/>
         <Route path='/signup' element={<SignupPage/>}/>
+        <Route path='/hook-form' element={<SignUp/>}/>
         <Route path='/verify/:token' element={<VerifyEmail/>}/>
       </Routes>
     </BrowserRouter>
